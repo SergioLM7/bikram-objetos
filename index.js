@@ -13,8 +13,6 @@ const Casa = {
     portal: 43,
     piso: '2ºB',
 };
-
-
 //3.- Crea un objeto de nombre FullStackDeveloper que tenga las propiedades: array lenguajes, array proyectos
 const FullStackDeveloper = {
     lenguajes: ['Javascript', 'HTML', 'CSS'],
@@ -69,7 +67,7 @@ const Noticia = {
 //14.- Crea un objeto de nombre Persona que tenga las propiedades: nombre, apellidos, edad
 const Persona = {
     nombre: 'Julián',
-    apellidos: 'García', 'Lopez',
+    apellidos: ['García', 'Lopez'],
     edad: 21,
 };
 
@@ -78,7 +76,8 @@ const Persona = {
 const Avion = {
     numPasajeros: 156,
     despegar: () => {console.log('despegando')},
-    volar: () => {console.log('aterrizando')},
+    volar: () => {console.log('llegando al destino')},
+    aterrizar: () => {console.log('aterrizando')},
 };
 
 //16.- Crea un objeto de nombre Paquete que tenga las propiedades: array contenido con todos los objetos que contenga el paquete
@@ -111,11 +110,18 @@ let pixeles = Pantalla.pixeles;
 let especificaciones = Movil["especificaciones"];
 
 //Modificación de propiedades
-//3.- Dado un objeto de nombre Grupo modifica el valor de la propiedad numIntegrantes por el valor 5
-
+//23.- Dado un objeto de nombre Grupo modifica el valor de la propiedad numIntegrantes por el valor 5
+Grupo.numIntegrantes = 5;
 
 //24.- Dado un objeto de nombre Pantalla modifica el valor de la propiedad dimensiones por el valor 1920x1080
+Pantalla.dimensiones = '1920x1080';
 
 //25.- Dado un objeto de nombre Led modifica el valor de la propiedad encendido por el valor false si vale true y true si vale false
+if (Led.encendido === false) {
+    Led.encendido = true;
+} else {
+    Led.encendido = false;
+};
 
 //26.- Dado un objeto de nombre Movil modifica el valor de la propiedad temperatura por el valor 20º
+Movil.temperatura = '20º';
